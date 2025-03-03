@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ZeitGuard</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/output.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -33,10 +33,41 @@
 </head>
 
 <body>
+  <header class="bg-dark">
+    <div class="w-full h-18 flex items-center justify-between px-3">
+      <div class="h-full flex items-center">
+        <img class="h-full w-auto" src="logo.png" alt="ZeitGuard">
+        <span class="text-2xl font-bold text-white">ZeitGuard</span>
+      </div>
+      <nav class="flex items-center gap-5">
+        <a class="text-white" href="/">Home</a>
+        <a class="text-white" href="/">About</a>
+        <a class="text-white" href="/">Pricing</a>
+        <a class="text-white" href="/">Contact</a>
+      </nav>
+    </div>
+    <section class="relative w-full min-h-[93vh] flex flex-col md:flex-row items-center justify-between px-6 md:px-12 lg:px-24">
+      <!-- Background Lightning Image -->
+      <div class="absolute w-[70%] lg:w-[50%] h-[65%] md:h-full left-0 md:left-auto md:right-0 md:top-0 bottom-0 bg-no-repeat bg-contain bg-center" style="background-image: url('img/zeitguard-logo-large.png');"></div>
 
-  <!-- Add your site or application content here -->
-  <p>ZeitGuard</p>
+      <div class="lg:max-w-2xl md:max-w-xl text-center md:text-left z-10">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white md:me-4 mt-10">
+          Master Time Management <br> and conquer procrastination with <span class="text-blue-500">ZeitGuard</span>
+        </h1>
+        <p class="text-light text-lg md:text-xl lg:text-2xl mt-4 mb-20 md:me-8">
+          ZeitGuard is your all-in-one solution for mastering time management, conquering procrastination, and boosting productivity. If you've ever caught yourself thinking, "Why can I not sleep when I'm stressed?" or "How do I get motivated when I feel stuck?", ZeitGuard free app helps you tackle these challenges head-on.
+        </p>
+        <a href="index.html" class="bg-blue-500 text-white text-lg md:text-xl lg:text-2xl px-6 pb-3 pt-4 rounded-lg hover:bg-blue-600 active:bg-blue-700">
+          Download the free app
+        </a>
+      </div>
 
+      <!-- Phone Image -->
+      <div class="relative min-w-60 flex justify-center mt-20 lg:mt-0 lg:w-auto z-10">
+        <img src="img/homescreen.png" alt="Phone Screen">
+      </div>
+    </section>
+  </header>
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'PPTelegraf';
+    src: url('../fonts/PPTelegraf-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@layer base {
+    body {
+        font-family: PPTelegraf, serif;
+    }
+}
+
+@theme {
+    --color-dark: #0B0534;
+    --color-light: #C7C7C7;
+}
