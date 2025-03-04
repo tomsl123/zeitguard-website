@@ -67,53 +67,93 @@
         <img src="img/homescreen.png" alt="Phone Screen">
       </div>
     </section>
-    <section class="w-full bg-black text-white py-16 px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center justify-between">
-      <div class="md:w-1/2 text-center md:text-left">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white">What Is Procrastination?</h2>
-        <p class="text-light text-lg lg:text-xl mt-4 mb-20">
-          You might be asking, “What is procrastination?” Procrastination often involves feeling lazy, feeling overwhelmed, or not knowing where to begin. It can cause you to wonder, “Why can I not sleep when I’m overloaded?” or “How do I get motivated when I feel stuck?” Understanding these triggers is the first step toward better time management and higher productivity.
-        </p>
-        <a href="index.html" class="bg-blue-500 text-white text-lg md:text-xl lg:text-2xl px-6 pb-3 pt-4 rounded-lg hover:bg-blue-600 active:bg-blue-700 md:float-right">
-          Overcome Procrastination Now!
-        </a>
-      </div>
-      <div class="md:w-1/2 flex justify-center mt-15 md:mt-0 lg:ps-20 md:ps-10">
-        <img src="img/deadline-clock.png" alt="Deadline Clock" class="w-full rounded-lg shadow-lg">
+    <section class="w-full bg-black text-white py-16 px-6 md:px-12 lg:px-24">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-15">What Is Procrastination?</h2>
+      <div class="w-full flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 text-center md:text-left">
+          <p class="text-light text-lg lg:text-xl mt-4 mb-20">
+            You might be asking, “What is procrastination?” Procrastination often involves feeling lazy, feeling overwhelmed, or not knowing where to begin. It can cause you to wonder, “Why can I not sleep when I’m overloaded?” or “How do I get motivated when I feel stuck?” Understanding these triggers is the first step toward better time management and higher productivity.
+          </p>
+          <a href="index.html" class="bg-blue-500 text-white text-lg md:text-xl lg:text-2xl px-6 pb-3 pt-4 rounded-lg hover:bg-blue-600 active:bg-blue-700 md:float-right">
+            Overcome Procrastination Now!
+          </a>
+        </div>
+        <div class="md:w-1/2 flex justify-center mt-15 md:mt-0 lg:ps-20 md:ps-10">
+          <img src="img/deadline-clock.png" alt="Deadline Clock" class="w-full rounded-lg shadow-lg">
+        </div>
       </div>
     </section>
     <section class="w-full bg-black text-white py-16 px-6 md:px-12 lg:px-24">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-15">Practical Tools to Stop Procrastinating</h2>
       <div class="w-full flex flex-col md:flex-row items-center justify-between">
         <!-- Carousel Column -->
         <div class="md:w-1/2 relative">
           <div class="overflow-hidden relative">
-            <div id="carousel" class="flex md:space-x-[calc(2/12*100%)] xl:space-x-[calc(1/12*100%)] overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar justify-center sm:justify-start">
-              <img src="img/homescreen.png" class="w-full md:w-5/12 xl:w-3/12 snap-center rounded-lg shadow-lg flex-none md:flex-auto">
-              <img src="img/homescreen.png" class="w-full md:w-5/12 xl:w-3/12 snap-center rounded-lg shadow-lg flex-none md:flex-auto">
-              <img src="img/homescreen.png" class="w-full md:w-5/12 xl:w-3/12 snap-center rounded-lg shadow-lg flex-none md:flex-auto">
+            <div id="carousel" class="flex md:space-x-[calc(2/12*100%)] xl:space-x-[calc(1/12*100%)] overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar xl:justify-center">
+              <div class="w-full md:w-5/12 xl:w-3/12 snap-center flex justify-center flex-none">
+                <img src="img/homescreen.png" class="rounded-lg shadow-lg max-w-4/5 sm:max-w-full mx-auto">
+              </div>
+              <div class="w-full md:w-5/12 xl:w-3/12 snap-center flex justify-center flex-none">
+                <img src="img/homescreen.png" class="rounded-lg shadow-lg max-w-4/5 sm:max-w-full mx-auto">
+              </div>
+              <div class="w-full md:w-5/12 xl:w-3/12 snap-center flex justify-center flex-none">
+                <img src="img/homescreen.png" class="rounded-lg shadow-lg max-w-4/5 sm:max-w-full mx-auto">
+              </div>
+
             </div>
           </div>
           <!-- Navigation Buttons -->
-          <button onclick="scrollLeft()" class="absolute top-1/2 left-[-20px] transform -translate-y-1/2 bg-gray-800 p-2 rounded-full shadow-lg">
-            ◀
+          <button onclick="scrollBack()" class="absolute top-1/2 left-[-10px] sm:left-[5%] md:left-[-50px] transform -translate-y-1/2 cursor-pointer">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="50" height="50" fill="url(#pattern0_4_433)"/>
+              <defs>
+                <pattern id="pattern0_4_433" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_4_433" transform="scale(0.0111111)"/>
+                </pattern>
+                <image id="image0_4_433" width="90" height="90" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACX0lEQVR4nO2dsYpTQRRAs0ZksRBEG2GtF7HcagvrgPoLSeU3mP2HNRu/wEobrbXwD2zsbCxsFIRdwWghKi5HAtoIYubKu5N5OacO5HICk5y8mfcGAxEREREREekG4BxwH3jL3/kAzJav7WiMfgNsAY9YnVntmZsEmFLGSe2ZmwO4BZwqulvJ14BPlHPU5Vy9ArgIvA5Ifgmcrz1/EwBD4FlA8ntgp/b8zQDMA5K/ATdqz94MwIQYd2rP3gzAPvA1INnfzasCXAHeBSQ/B86u/EabDLANvAhIfgNcrj1/X/P6N5+B67XnbwbggHKWpXi79uzNAIyAHwHRd2vP3gzALrAISH68XG5qz98EmNcpkofmdY7oeWC5MK8LJU+IYV4XSN43rzsG87p7MK9TJG+Z1zmiDwJffOZ1oeSRed0xmNfdg3mdInloXueInge+/MzrQskTYpjXBZLN664xr9c/ry9lzNgLgHsByYvlLtHaszcFcFwo+dSr14peX4BDl44E/K85EX/eJQLsAV8Cy4hnTQKyx8QwwQOyZwHR3z0SUS76DPA0eMjnavEnu8kAF4BXAdkeWwvuFP0YkP3EnaJ5F2enxZ/spkP5Yfkl/h8SlP0gINvzKQHR2564SgI3OeaBmZ4qe0wMMz0gexYQbaYnZ/pO8RtuMpjpqbJ3zfQ82SMzPU/2NLBem+kRzPQkMNPzwExPlb3n1fQ82WNimOlJme4RjVLM9EQw09Nva7wILCNuNSsFuOmNutc304+zZusdwMMC0d4U9j8fD3L0j8eDnPw6wOTjQURERERERAZ/8BMXmYOMYh01GwAAAABJRU5ErkJggg=="/>
+              </defs>
+            </svg>
+
           </button>
-          <button onclick="scrollRight()" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full shadow-lg">
-            ▶
+          <button onclick="scrollForth()" class="absolute top-1/2 right-[-10px] sm:right-[5%] md:right-[-50px] transform -translate-y-1/2 cursor-pointer">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="50" height="50" fill="url(#pattern0_4_434)"/>
+              <defs>
+                <pattern id="pattern0_4_434" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_4_434" transform="scale(0.0111111)"/>
+                </pattern>
+                <image id="image0_4_434" width="90" height="90" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACPElEQVR4nO2dv2qUQRRHv2WDBotAwCZgvwTLNNnCeiH6CknlM7g+QKz8kzxBqqSyTgrfII2dTQobBQUjJhbignJkiZaRvRfmJrrnvMD3cXaYnd/cO/N1nYiIiIiIiHQdcBN4AZxyOe+AbWBBZ0m4kDwr+4rOiz4lxljZNaJ/AhvKjoveIc4ZsKrsmOhF4Dgh+y1wW9kx2SvA+4TsV65EggBrwLeE7OeO6rjsTXI8VHbbdfUfJsA9ZcdE94FD4nwA7ig7JnsJeJOQ/Rq4peyY7AHwJSH7JdBTdkz2CPiRkG1MjwKME6KnMf2Bozouey8h+ytwV9kBjOmFYEwvlb1mTK+TvUkOY3oUY3oRGNPrwJheKntgTK+TPTKm18keJ1YhxvQMxvQisJpeB8b0UtnrwPfEnG01PYoxvRCsppeJ7ltNr5O9DJwk5mur6VGmXae/u0+jPA0/bN4hF9M/XfV7z4voj1f93v8UOHW0xz/DGsl9l3fX92zMxPbfAMAWOayUzwowdFOpMbhN2h7c+C+R3AMOEnOyHacRgMcJyRZni9oNHoUeNM9w0UCT2ZnznMusGK/r4vVRYiR7FjGC8boAjNclkofG6/aSV7zTo73kRW+paS+5Z7wuAON1ieSR8bq95IHxur3kZVu52kvuG68LwOp1ieQtcli9DkgeGq8bg/G6PRivawB2E3Pyudcax0V/TlSv77f52f9j8Or56/kxBbylMS36BvBsembkL4Kn08sTL+UWERERERHpavgFcdaDjHIlu5EAAAAASUVORK5CYII="/>
+              </defs>
+            </svg>
           </button>
         </div>
 
         <!-- Text Content Column -->
-        <div class="md:w-1/2 text-center md:text-left md:ps-20">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white">Practical Tools to Stop Procrastinating</h2>
+        <div class="md:w-1/2 text-center md:text-left md:ps-20 mt-15 md:mt-0">
           <p class="text-light text-lg lg:text-xl mt-4 mb-20">
             Our interactive tutorials show you how to study effectively, how to start an essay with confidence, and most importantly, how to stop procrastinating before it sabotages your goals. We also include proven techniques for boosting motivation, reducing stress, and developing healthier habits. If you ever find yourself wondering “how do I get motivated” or “how to avoid distractions,” our free app has you covered.
           </p>
         </div>
       </div>
-      <a href="#" class="bg-blue-500 text-white text-lg md:text-xl lg:text-2xl px-6 pb-3 pt-4 rounded-lg hover:bg-blue-600 active:bg-blue-700 md:float-right">
-        Get ZeitGuard for free
-      </a>
+      <div class="w-full flex justify-center md:justify-end">
+        <a href="#" class="bg-blue-500 text-white text-lg md:text-xl lg:text-2xl px-6 pb-3 pt-4 rounded-lg hover:bg-blue-600 active:bg-blue-700">
+          Get ZeitGuard for free
+        </a>
+      </div>
     </section>
   </header>
+
+  <script>
+    const carousel = document.getElementById('carousel');
+
+    function scrollBack() {
+      carousel.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+
+    function scrollForth() {
+      carousel.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+  </script>
 </body>
 
 </html>
