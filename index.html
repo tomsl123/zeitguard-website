@@ -34,16 +34,14 @@
 
 <body>
   <header class="bg-dark">
-    <div class="w-full h-18 flex items-center justify-between px-3">
+    <div class="w-full h-18 flex items-center justify-between px-3 md:pe-10">
       <div class="h-full flex items-center">
         <img class="h-full w-auto" src="logo.png" alt="ZeitGuard">
         <span class="text-2xl font-bold text-white">ZeitGuard</span>
       </div>
       <nav class="flex items-center gap-5">
-        <a class="text-white" href="/">Home</a>
-        <a class="text-white" href="/">About</a>
-        <a class="text-white" href="/">Pricing</a>
-        <a class="text-white" href="/">Contact</a>
+        <a class="text-white text-lg hover:underline" href="/">Pricing</a>
+        <a class="text-white text-lg hover:underline" href="/">Contact</a>
       </nav>
     </div>
     <section class="relative w-full min-h-[93vh] flex flex-col md:flex-row items-center justify-between px-6 md:px-12 lg:px-24">
@@ -67,6 +65,9 @@
         <img src="img/homescreen.png" alt="Phone Screen">
       </div>
     </section>
+
+  </header>
+  <main>
     <section class="w-full bg-black text-white py-16 px-6 md:px-12 lg:px-24">
       <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-15">What Is Procrastination?</h2>
       <div class="w-full flex flex-col md:flex-row items-center justify-between">
@@ -90,31 +91,31 @@
         <div class="md:w-1/2 relative">
           <div class="overflow-hidden relative">
             <div id="carousel" class="flex md:space-x-[calc(2/12*100%)] xl:space-x-[calc(1/12*100%)] overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar xl:justify-center">
-              <div class="w-full md:w-5/12 xl:w-3/12 snap-center flex justify-center flex-none">
+              <div class="w-full md:w-5/12 xl:w-3/12 snap-center md:snap-start flex justify-center flex-none">
                 <img src="img/homescreen.png" class="rounded-lg shadow-lg max-w-4/5 sm:max-w-3/5 md:max-w-full mx-auto">
               </div>
-              <div class="w-full md:w-5/12 xl:w-3/12 snap-center flex justify-center flex-none">
+              <div class="w-full md:w-5/12 xl:w-3/12 snap-center md:snap-start flex justify-center flex-none">
                 <img src="img/icu.png" class="rounded-lg shadow-lg max-w-4/5 sm:max-w-3/5 md:max-w-full mx-auto">
               </div>
-              <div class="w-full md:w-5/12 xl:w-3/12 snap-center flex justify-center flex-none">
+              <div class="w-full md:w-5/12 xl:w-3/12 snap-center md:snap-start flex justify-center flex-none">
                 <img src="img/eisenhower-matrix-screen.png" class="rounded-lg shadow-lg max-w-4/5 sm:max-w-3/5 md:max-w-full mx-auto">
               </div>
-              <div class="w-full md:w-5/12 xl:w-3/12 snap-center flex justify-center flex-none">
+              <div class="w-full md:w-5/12 xl:w-3/12 snap-center md:snap-start flex justify-center flex-none">
                 <img src="img/calendar.png" class="rounded-lg shadow-lg max-w-4/5 sm:max-w-3/5 md:max-w-full mx-auto">
               </div>
-              <div class="w-full md:w-5/12 xl:w-3/12 snap-center flex justify-center flex-none">
+              <div class="w-full md:w-5/12 xl:w-3/12 snap-center md:snap-start flex justify-center flex-none">
                 <img src="img/journey.png" class="rounded-lg shadow-lg max-w-4/5 sm:max-w-3/5 md:max-w-full mx-auto">
               </div>
-              <div class="w-full md:w-5/12 xl:w-3/12 snap-center flex justify-center flex-none">
+              <div class="w-full md:w-5/12 xl:w-3/12 snap-center md:snap-start flex justify-center flex-none">
                 <img src="img/how-to.png" class="rounded-lg shadow-lg max-w-4/5 sm:max-w-3/5 md:max-w-full mx-auto">
               </div>
-              <div class="w-full md:w-5/12 xl:w-3/12 snap-center flex justify-center flex-none">
+              <div class="w-full md:w-5/12 xl:w-3/12 snap-center md:snap-start flex justify-center flex-none">
                 <img src="img/quiz.png" class="rounded-lg shadow-lg max-w-4/5 sm:max-w-3/5 md:max-w-full mx-auto">
               </div>
-              <div class="w-full md:w-5/12 xl:w-3/12 snap-center flex justify-center flex-none">
+              <div class="w-full md:w-5/12 xl:w-3/12 snap-center md:snap-start flex justify-center flex-none">
                 <img src="img/quiz-result.png" class="rounded-lg shadow-lg max-w-4/5 sm:max-w-3/5 md:max-w-full mx-auto">
               </div>
-              <div class="w-full md:w-5/12 xl:w-3/12 snap-center flex justify-center flex-none">
+              <div class="w-full md:w-5/12 xl:w-3/12 snap-center md:snap-start flex justify-center flex-none">
                 <img src="img/course.png" class="rounded-lg shadow-lg max-w-4/5 sm:max-w-3/5 md:max-w-full mx-auto">
               </div>
 
@@ -159,7 +160,143 @@
         </a>
       </div>
     </section>
-  </header>
+    <section class="w-full py-16 px-6 md:px-12 lg:px-24 bg-black text-white">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-15">ZeitGuard's key features</h2>
+      <div class="mt-6">
+        <article class="border-b border-white">
+          <!-- Accordion Header (Click to Expand) -->
+          <div class="w-full flex items-center justify-between py-4 cursor-pointer"
+               data-accordion-trigger>
+            <h3 class="text-2xl md:text-3xl">
+              Eisenhower matrix
+            </h3>
+            <div class="transition-transform duration-500" data-accordion-icon>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="40" height="40" fill="url(#pattern0_12_54)"/>
+                <defs>
+                  <pattern id="pattern0_12_54" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_12_54" transform="scale(0.0111111)"/>
+                  </pattern>
+                  <image id="image0_12_54" width="90" height="90" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACNklEQVR4nO3avU5UQRiH8SECggWJrRo6GrgBbazprKURvQFvgYKCQJCaThJMrKXaSyAUdFLQUUDEDxIKQgE+5CRTEV3Ox3vOvjPn/0tomXdOdnfmgQ1BRERERERERERERERERERERERE+gSYBD4BF/FnC5gOPQNMx73/ic+heCaTlgsUv/C+A+BF6AngedzzfZuWi/zi386AVyFzwEvg9D/P4KflQsNcAx9CpoC3wNWwB2C5WBnbwETIBPAIWCuzcctFyxoAT0PigBngW9lNWy5cxTGwEBIFzAHfq2zYcvGqLoE3ITHAYry2VWI5QB1/gRVgLCQA+Ajc1Nmo5RAn1PfFc9zECClmrOu35TCrNHPgMW6GREgVq5YDjQO7DQc69RQ3D0RIWcUzGXf1OeYpboClhyJk5OdP3ZPZQ9xUiRAXN6p41zxqOPCgy7iJEbLXcOaiEea7mtl68AWPEeKqelN4K2L3UWd/6OVyuGBzeL8Pnhhdl74CTwxmeQx8bjjLOfA6eAQ8A/YbbvAQmE15hk4AU8DOKF5NOHpXdabruMHpOdGJLuKGBG4+yccNqUZISnFDgnXaCQzf4llFSFuA5XjQ1XUbf+oq1n4X+gCba1heEdIWbMIirwhxHjf5RYjjuMkvQtqCzU0irwhpCzZ347wixHHcDLKLEIdxs511hLSF8n+R8/efkAzj5rx3ETKCuDnsbYS0/GXEjfgK/gGse/7ypIiIiIiIiIiIiIiIiIiIiIiEJNwBxR19cZIUClMAAAAASUVORK5CYII="/>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Accordion Content (Initially Hidden) -->
+          <div class="overflow-hidden max-h-0 transition-all duration-500" data-accordion-content>
+            <div class="w-full flex flex-col md:flex-row items-center justify-between pb-10">
+              <div class="md:w-1/2 text-center md:text-left">
+                <p class="text-light text-lg lg:text-xl mt-4 mb-20">
+                  One effective way to defeat procrastination or laziness is by using the Eisenhower Matrix, a simple yet powerful framework that sorts tasks according to urgency and importance. This approach helps you focus on high-priority tasks first, delegate or schedule less urgent items, and eliminate time-wasting activities. By integrating the Eisenhower Matrix into your daily routine, you’ll experience immediate improvements in time management, reduce feeling overwhelmed, and start making steady progress toward your goals.                </p>
+                <a href="index.html" class="bg-blue-500 text-white text-lg md:text-xl lg:text-2xl px-6 pb-3 pt-4 rounded-lg hover:bg-blue-600 active:bg-blue-700 md:float-right">
+                  Try the Eisenhower Matrix
+                </a>
+              </div>
+              <div class="md:w-1/2 flex justify-center mt-15 md:mt-0 lg:ps-20 md:ps-10">
+                <img src="img/eisenhower-matrix.png" alt="Visual representation of the Eisenhower matrix with 4 differently colored quadrants" class="max-w-full max-h-100 rounded-lg shadow-lg">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="border-b border-white">
+          <!-- Accordion Header (Click to Expand) -->
+          <div class="w-full flex items-center justify-between py-4 cursor-pointer"
+               data-accordion-trigger>
+            <h3 class="text-2xl md:text-3xl">
+              Pomodoro Technique
+            </h3>
+            <div class="transition-transform duration-500" data-accordion-icon>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="40" height="40" fill="url(#pattern0_12_54)"/>
+                <defs>
+                  <pattern id="pattern0_12_54" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_12_54" transform="scale(0.0111111)"/>
+                  </pattern>
+                  <image id="image0_12_54" width="90" height="90" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACNklEQVR4nO3avU5UQRiH8SECggWJrRo6GrgBbazprKURvQFvgYKCQJCaThJMrKXaSyAUdFLQUUDEDxIKQgE+5CRTEV3Ox3vOvjPn/0tomXdOdnfmgQ1BRERERERERERERERERERERERE+gSYBD4BF/FnC5gOPQNMx73/ic+heCaTlgsUv/C+A+BF6AngedzzfZuWi/zi386AVyFzwEvg9D/P4KflQsNcAx9CpoC3wNWwB2C5WBnbwETIBPAIWCuzcctFyxoAT0PigBngW9lNWy5cxTGwEBIFzAHfq2zYcvGqLoE3ITHAYry2VWI5QB1/gRVgLCQA+Ajc1Nmo5RAn1PfFc9zECClmrOu35TCrNHPgMW6GREgVq5YDjQO7DQc69RQ3D0RIWcUzGXf1OeYpboClhyJk5OdP3ZPZQ9xUiRAXN6p41zxqOPCgy7iJEbLXcOaiEea7mtl68AWPEeKqelN4K2L3UWd/6OVyuGBzeL8Pnhhdl74CTwxmeQx8bjjLOfA6eAQ8A/YbbvAQmE15hk4AU8DOKF5NOHpXdabruMHpOdGJLuKGBG4+yccNqUZISnFDgnXaCQzf4llFSFuA5XjQ1XUbf+oq1n4X+gCba1heEdIWbMIirwhxHjf5RYjjuMkvQtqCzU0irwhpCzZ347wixHHcDLKLEIdxs511hLSF8n+R8/efkAzj5rx3ETKCuDnsbYS0/GXEjfgK/gGse/7ypIiIiIiIiIiIiIiIiIiIiIiEJNwBxR19cZIUClMAAAAASUVORK5CYII="/>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Accordion Content (Initially Hidden) -->
+          <div class="overflow-hidden max-h-0 transition-all duration-500" data-accordion-content>
+            <div class="w-full flex flex-col md:flex-row items-center justify-between pb-10">
+              <div class="md:w-1/2 text-center md:text-left">
+                <p class="text-light text-lg lg:text-xl mt-4 mb-20">
+                  Looking for a reliable way to supercharge your day? The Pomodoro Technique splits your workload into focused intervals—commonly 25 minutes of work followed by a short break—to keep you energized and minimize distractions. With ZeitGuard’s built-in pomodoro app and focus timer, you can maintain momentum on any task, whether you’re figuring out how to study effectively, how to start an essay, or simply trying to get more done in less time. This structured approach helps you avoid burnout and consistently improves productivity.
+                </p>
+                <a href="index.html" class="bg-blue-500 text-white text-lg md:text-xl lg:text-2xl px-6 pb-3 pt-4 rounded-lg hover:bg-blue-600 active:bg-blue-700 md:float-right">
+                  Start Using Pomodoro Technique
+                </a>
+              </div>
+              <div class="md:w-1/2 flex justify-center mt-15 md:mt-0 lg:ps-20 md:ps-10">
+                <img src="img/pomodoro-no-bg.png" alt="Illustration of a timer in a shape of tomato, symbolizing Pomodoro Technique." class="max-w-full max-h-100 rounded-lg shadow-lg">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="border-b border-white">
+          <!-- Accordion Header (Click to Expand) -->
+          <div class="w-full flex items-center justify-between py-4 cursor-pointer"
+               data-accordion-trigger>
+            <h3 class="text-2xl md:text-3xl">
+              Schedule Planner
+            </h3>
+            <div class="transition-transform duration-500" data-accordion-icon>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="40" height="40" fill="url(#pattern0_12_54)"/>
+                <defs>
+                  <pattern id="pattern0_12_54" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_12_54" transform="scale(0.0111111)"/>
+                  </pattern>
+                  <image id="image0_12_54" width="90" height="90" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACNklEQVR4nO3avU5UQRiH8SECggWJrRo6GrgBbazprKURvQFvgYKCQJCaThJMrKXaSyAUdFLQUUDEDxIKQgE+5CRTEV3Ox3vOvjPn/0tomXdOdnfmgQ1BRERERERERERERERERERERERE+gSYBD4BF/FnC5gOPQNMx73/ic+heCaTlgsUv/C+A+BF6AngedzzfZuWi/zi386AVyFzwEvg9D/P4KflQsNcAx9CpoC3wNWwB2C5WBnbwETIBPAIWCuzcctFyxoAT0PigBngW9lNWy5cxTGwEBIFzAHfq2zYcvGqLoE3ITHAYry2VWI5QB1/gRVgLCQA+Ajc1Nmo5RAn1PfFc9zECClmrOu35TCrNHPgMW6GREgVq5YDjQO7DQc69RQ3D0RIWcUzGXf1OeYpboClhyJk5OdP3ZPZQ9xUiRAXN6p41zxqOPCgy7iJEbLXcOaiEea7mtl68AWPEeKqelN4K2L3UWd/6OVyuGBzeL8Pnhhdl74CTwxmeQx8bjjLOfA6eAQ8A/YbbvAQmE15hk4AU8DOKF5NOHpXdabruMHpOdGJLuKGBG4+yccNqUZISnFDgnXaCQzf4llFSFuA5XjQ1XUbf+oq1n4X+gCba1heEdIWbMIirwhxHjf5RYjjuMkvQtqCzU0irwhpCzZ347wixHHcDLKLEIdxs511hLSF8n+R8/efkAzj5rx3ETKCuDnsbYS0/GXEjfgK/gGse/7ypIiIiIiIiIiIiIiIiIiIiIiEJNwBxR19cZIUClMAAAAASUVORK5CYII="/>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Accordion Content (Initially Hidden) -->
+          <div class="overflow-hidden max-h-0 transition-all duration-500" data-accordion-content>
+            <div class="w-full flex flex-col md:flex-row items-center justify-between pb-10">
+              <div class="md:w-1/2 text-center md:text-left">
+                <p class="text-light text-lg lg:text-xl mt-4 mb-20">
+                  A clear and consistent routine is key to effective time management, which is why ZeitGuard includes a schedule planner and phone planner. These intuitive tools allow you to map out daily tasks, set reminders, and track deadlines—all in one place. By maintaining a bird’s-eye view of your responsibilities, you’ll learn how to stop procrastinating, prioritize tasks with confidence, and reduce the stress that comes with juggling multiple to-dos.
+                </p>
+                <a href="index.html" class="bg-blue-500 text-white text-lg md:text-xl lg:text-2xl px-6 pb-3 pt-4 rounded-lg hover:bg-blue-600 active:bg-blue-700 md:float-right">
+                  Make Your Schedule Plan
+                </a>
+              </div>
+              <div class="md:w-1/2 flex justify-center mt-15 md:mt-0 lg:ps-20 md:ps-10">
+                <img src="img/planner.webp" alt="Colorful illustration of a week planner" class="max-w-full max-h-100 rounded-lg shadow-lg">
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="w-full bg-black text-white py-16 px-6 md:px-12 lg:px-24 flex flex-col items-center">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-15">Ready to Transform Your Routine?</h2>
+      <p class="lg:w-3/4 text-center text-light text-lg lg:text-xl mb-20">
+        Whether you’re trying to figure out how to study effectively, how to start an essay, or simply master time management, ZeitGuard offers all the tools you need. By leveraging proven methods like the Eisenhower Matrix and the Pomodoro Technique, our platform helps you tackle important tasks without burning out or losing focus. Instead of asking yourself “why can I not sleep” when deadlines loom, use ZeitGuard app to overcome procrastination and make real progress toward your goals.
+      </p>
+      <a href="index.html" class="bg-blue-500 text-white text-lg md:text-xl lg:text-2xl px-6 pb-3 pt-4 rounded-lg hover:bg-blue-600 active:bg-blue-700 md:float-right">
+        Boost your productivity now
+      </a>
+    </section>
+  </main>
+  <footer class="w-full bg-dark text-white py-10 px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center justify-between">
+    <!-- Copyright -->
+    <p class="text-light text-lg">&copy; 2025 ZeitGuard. All rights reserved.</p>
+
+    <!-- Links -->
+    <nav class="flex space-x-6 mt-4 md:mt-0">
+      <a href="#" class="text-light text-lg hover:underline">Privacy Policy</a>
+      <a href="#" class="text-light text-lg hover:underline">Terms of Use</a>
+    </nav>
+  </footer>
 
   <script>
     const carousel = document.getElementById('carousel');
@@ -171,7 +308,27 @@
     function scrollForth() {
       carousel.scrollBy({ left: 300, behavior: 'smooth' });
     }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const accordionContainers = document.querySelectorAll("[data-accordion-trigger]");
+
+      accordionContainers.forEach(function (trigger) {
+        trigger.addEventListener("click", function () {
+          const content = this.nextElementSibling;
+          const icon = this.querySelector("[data-accordion-icon]");
+
+          const isOpen = !!content.style.maxHeight;
+
+          if(isOpen) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+          icon.classList.toggle("rotate-180", !isOpen);
+        });
+      });
+
+    });
   </script>
 </body>
-
 </html>
