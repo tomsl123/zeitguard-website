@@ -507,6 +507,9 @@
   .h-screen {
     height: 100vh;
   }
+  .max-h-full {
+    max-height: 100%;
+  }
   .max-h-none {
     max-height: none;
   }
@@ -1987,6 +1990,11 @@
       left: 5%;
     }
   }
+  .sm\:max-w-3\/5 {
+    @media (width >= 40rem) {
+      max-width: calc(3/5 * 100%);
+    }
+  }
   .sm\:max-w-full {
     @media (width >= 40rem) {
       max-width: 100%;
@@ -2050,6 +2058,11 @@
   .md\:w-5\/12 {
     @media (width >= 48rem) {
       width: calc(5/12 * 100%);
+    }
+  }
+  .md\:max-w-full {
+    @media (width >= 48rem) {
+      max-width: 100%;
     }
   }
   .md\:max-w-xl {
