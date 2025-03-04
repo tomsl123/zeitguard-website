@@ -81,7 +81,38 @@
         <img src="img/deadline-clock.png" alt="Deadline Clock" class="w-full rounded-lg shadow-lg">
       </div>
     </section>
+    <section class="w-full bg-black text-white py-16 px-6 md:px-12 lg:px-24">
+      <div class="w-full flex flex-col md:flex-row items-center justify-between">
+        <!-- Carousel Column -->
+        <div class="md:w-1/2 relative">
+          <div class="overflow-hidden relative">
+            <div id="carousel" class="flex md:space-x-[calc(2/12*100%)] xl:space-x-[calc(1/12*100%)] overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar justify-center sm:justify-start">
+              <img src="img/homescreen.png" class="w-full md:w-5/12 xl:w-3/12 snap-center rounded-lg shadow-lg flex-none md:flex-auto">
+              <img src="img/homescreen.png" class="w-full md:w-5/12 xl:w-3/12 snap-center rounded-lg shadow-lg flex-none md:flex-auto">
+              <img src="img/homescreen.png" class="w-full md:w-5/12 xl:w-3/12 snap-center rounded-lg shadow-lg flex-none md:flex-auto">
+            </div>
+          </div>
+          <!-- Navigation Buttons -->
+          <button onclick="scrollLeft()" class="absolute top-1/2 left-[-20px] transform -translate-y-1/2 bg-gray-800 p-2 rounded-full shadow-lg">
+            ◀
+          </button>
+          <button onclick="scrollRight()" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full shadow-lg">
+            ▶
+          </button>
+        </div>
 
+        <!-- Text Content Column -->
+        <div class="md:w-1/2 text-center md:text-left md:ps-20">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white">Practical Tools to Stop Procrastinating</h2>
+          <p class="text-light text-lg lg:text-xl mt-4 mb-20">
+            Our interactive tutorials show you how to study effectively, how to start an essay with confidence, and most importantly, how to stop procrastinating before it sabotages your goals. We also include proven techniques for boosting motivation, reducing stress, and developing healthier habits. If you ever find yourself wondering “how do I get motivated” or “how to avoid distractions,” our free app has you covered.
+          </p>
+        </div>
+      </div>
+      <a href="#" class="bg-blue-500 text-white text-lg md:text-xl lg:text-2xl px-6 pb-3 pt-4 rounded-lg hover:bg-blue-600 active:bg-blue-700 md:float-right">
+        Get ZeitGuard for free
+      </a>
+    </section>
   </header>
 </body>
 
